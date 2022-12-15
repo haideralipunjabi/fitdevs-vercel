@@ -13,7 +13,7 @@ function Events({ events }) {
                 </div>
                 <div className={styles.events}>
                     <div className={styles.events__content}>
-                        {(events) ? events.map((event) => <EventCard event={event} key={event.id} />) : <p>No events are scheduled at this time.</p>}
+                        {(!events.message) ? events.map((event) => <EventCard event={event} key={event.id} />) : <p>No events are scheduled at this time.</p>}
                     </div>
                 </div>
             </section>
