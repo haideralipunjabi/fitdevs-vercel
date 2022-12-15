@@ -1,4 +1,4 @@
-import styles from '../styles/cta.module.css'
+import styles from '../styles/Cta.module.css'
 
 function Cta() {
     return(
